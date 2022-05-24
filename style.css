@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/*
+Cor1 - #FFC259
+Cor2 - #6FE3D6
+Cor3 - #FA8791
+Cor4 - #A3E659
+Cor5 - #9D7FFA
+*/
+
+:root{
+    --Cor1: #B5F7DC;
+    --Cor2: #A6B0FF;
+    --Cor3: #E8A2CF;
+    --Cor4: #FFBAA3;
+    --Cor5: #FAE3BB;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--Cor5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--Cor1), var(--Cor3)); /*GRADIENTE*/
+    min-height: 120px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+nav{
+    background-color: var(--Cor4);
+    padding: 10px; /*espaçamento interno até a borda*/
+    box-shadow: 3px 1px 3px 3px; /*sombra*/
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--Cor1);
+    color: var(--Cor4);
+}
+
+main{
+    background-color: rgb(206, 128, 154);
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: 5px 7px 10px 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main h1{
+    color: var(--Cor5);
+    background-image: linear-gradient(to right, var(--Cor4), transparent);
+    margin-bottom: 15px;
+}
+
+main p{
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 40px;
+    margin-top: 10px;
+}
+
+pre{
+    font-size: 20px;
+}
+
+iframe{
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    margin: 30px;
+    /*SHORTHAND - 1ºwidht, 2ºstyle, 3ºcolor*/
+}
+
+img{
+    border: 5px solid black;
+    margin: 30px 0px 0px 0px;
+}
+
+aside{
+    background-color: #A6B0FF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside > h3{
+    background-color: rgb(164, 96, 228);
+    color: white;
+    padding: 10px;
+    margin: -15px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    text-align: justify;
+    padding: 10px 0px 0px 5px;
+}
+
+footer{
+    background-color: #E8A2CF;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+footer > a {
+    color: rgb(37, 102, 223);
+    font-weight: bold;
+    text-decoration: none;
+}
